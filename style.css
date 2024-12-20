@@ -1,0 +1,205 @@
+/*  menghilangkan margin, padding, dan box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling untuk body */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* agar body setinggi 100vh (viewport height) */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; /* Menghilangkan padding dari body */
+    margin: 0; /* Menghilangkan margin */
+  }
+  
+  /* untuk header */
+  header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  
+  /* untuk navbar */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+  }
+  
+  nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #16a085;
+    transform: scale(1.1);
+  }
+  
+  /* Styling untuk main content */
+  main {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;  /*agar konten utama menggunakan minimal 70% dari tinggi layar*/
+  }
+  
+  /* untuk resources section */
+  .resources {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .resources h2 {
+    font-size: 2.5rem;
+    color: #34495E;
+    margin-bottom: 20px;
+  }
+  
+  /* untuk card-container */
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* untuk card */
+  .card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.8rem;
+    color: #34495E;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .card-content a {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card-content a:hover {
+    color: #2C3E50;
+  }
+  
+  /* untuk footer */
+  footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+
+  /* untuk bagian profil */
+.profil img {
+    width: 300px;  /* buat mengurangi lebar gambar */
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #2C3E50;
+}
+
+  
+  /* Responsiveness untuk tampilan mobile */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .profil {
+      padding: 2rem;
+    }
+  
+    .profile-img {
+      width: 180px;
+      height: 180px;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+
+    
+  }
+
+  .tentang ul li {
+    border-radius: 5px;
+    width: 1200px;
+    background-color: white;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .riwayat-sekolah{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .logo-hub i {
+    font-size: 100px;
+    margin-bottom: -20vh;
+  }
